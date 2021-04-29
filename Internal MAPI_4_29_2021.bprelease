@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bpr:release xmlns:bpr="http://www.blueprism.co.uk/product/release">
+    <bpr:name>Internal MAPI_4_29_2021</bpr:name>
+    <bpr:release-notes />
+    <bpr:created>2021-04-29 14:47:37Z</bpr:created>
+    <bpr:package-id>1</bpr:package-id>
+    <bpr:package-name>Internal MAPI v2</bpr:package-name>
+    <bpr:user-created-by>admin</bpr:user-created-by>
+    <bpr:contents count="2">
+        <object id="09a7ac3d-988a-495a-b28e-6b5415140dea" name="Outlook - Internal MAPI v2" xmlns="http://www.blueprism.co.uk/product/process"><process name="Outlook - Internal MAPI v2" version="1.0" bpversion="7.0.0.35305" narrative="Replacement of Internal MAPI v1 to remove local file dependencies and optimize single-mail ID actions." byrefcollection="true" type="object" runmode="Background"><appdef><element name="Application Root"><id>59d00c6d-ed67-40df-bcd3-a8ab016a43ee</id><type>Application</type><basetype>Application</basetype><datatype>unknown</datatype><diagnose>False</diagnose></element></appdef><view><camerax>147</camerax><cameray>-105</cameray><zoom version="2">1.25</zoom></view><preconditions /><endpoint narrative="" /><subsheet subsheetid="de274717-620b-4e9b-a503-36263c3d31b9" type="CleanUp" published="True"><name>Clean Up</name><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="5651b7be-4fc2-4624-9c6b-f089b7a01a9f" type="Normal" published="True"><name>Get Mail</name><view><camerax>-154</camerax><cameray>480</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="c89b4a21-e23b-4cb0-9447-8c2dee9721e0" type="Normal" published="True"><name>Send Mail</name><view><camerax>-172</camerax><cameray>-21</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="0a91c2dc-3324-463f-acfd-a61b919fedd3" type="Normal" published="True"><name>Forward Mail</name><view><camerax>-152</camerax><cameray>-21</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="21672800-6520-4ffe-ae37-56213eefd386" type="Normal" published="True"><name>Reply to Email</name><view><camerax>-91</camerax><cameray>-21</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54" type="Normal" published="True"><name>Save Email As File</name><view><camerax>21</camerax><cameray>38</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="2bb24235-4275-47af-99a6-1d5eb771431d" type="Normal" published="True"><name>Reply All to Email</name><view><camerax>-91</camerax><cameray>-21</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="95b1d477-2963-4353-a189-38504ed09fad" type="Normal" published="False"><name>Internal_Get Items</name><view><camerax>-266</camerax><cameray>46</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="3447211e-ebd7-4a30-9e97-66bd7f085195" type="Normal" published="True"><name>Force Sync</name><view><camerax>-92</camerax><cameray>25</cameray><zoom version="2">1.5625</zoom></view></subsheet><subsheet subsheetid="86407b98-7927-443d-be21-ab1864be4000" type="Normal" published="True"><name>Resolve_Name</name><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="7da0ec4b-f912-47ff-8d3c-18db9b069dc0" type="Normal" published="True"><name>Delete Mail</name><view><camerax>0</camerax><cameray>-42</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="80ebe616-d02d-4734-b0d5-54d38692873b" type="Normal" published="True"><name>Delete Single Mail</name><view><camerax>0</camerax><cameray>42</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="1848b23d-8045-42fd-b06d-24f7acbae541" type="Normal" published="True"><name>Mark single item read/unread</name><view><camerax>0</camerax><cameray>-63</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="a80b68cc-60e3-49e9-a271-cbd1b54897df" type="Normal" published="True"><name>Move Single Mail</name><view><camerax>0</camerax><cameray>-34</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="b72161c9-3340-4fef-9409-f1bcbb679efd" type="Normal" published="True"><name>Move Single Mail with Folder Path</name><view><camerax>0</camerax><cameray>-34</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="5e85f602-0aee-4a9f-8b82-763ccca90973" type="Normal" published="True"><name>Mark Tasked/Complete</name><view><camerax>-185</camerax><cameray>-30</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="90aaf62d-f355-478f-a0aa-cf2336a3fb76" type="Normal" published="True"><name>Save Attachment</name><view><camerax>20</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="a5cf62b6-98e5-4bad-b713-99d3a4cda262" type="Normal" published="True"><name>Save Attachments</name><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><stage stageid="2650fcab-1c33-4796-8102-c285fc6c4f9f" name="Start" type="Start"><loginhibit onsuccess="true" /><display x="15" y="-105" /><onsuccess>841b87d0-2b3f-4b44-8a73-dbd5e9e1a008</onsuccess></stage><stage stageid="841b87d0-2b3f-4b44-8a73-dbd5e9e1a008" name="End" type="End"><loginhibit onsuccess="true" /><display x="15" y="90" /></stage><stage stageid="b9dc4214-bca3-4257-9a6a-c8318b3c71cc" name="Stage1" type="ProcessInfo"><loginhibit onsuccess="true" /><display x="-195" y="-105" w="150" h="90" /><references><reference>System.Data.dll</reference><reference>System.Xml.dll</reference><reference>System.Drawing.dll</reference><reference>C:\windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Outlook\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Outlook.dll</reference><reference>System.Core.dll</reference></references><imports><import>System</import><import>System.Drawing</import><import>System.Data</import><import>System.IO</import><import>System.XML</import><import>System.Diagnostics</import><import>Microsoft.VisualBasic</import><import>System.Text.RegularExpressions</import><import>System.Data.OleDB</import><import>Microsoft.Office.Interop.Outlook</import><import>System.Runtime.InteropServices</import><import>System.Collections.Generic</import><import>System.Linq</import><import>System.Collections</import><import>Microsoft.Win32</import></imports><language>visualbasic</language><globalcode><![CDATA[]]></globalcode><code><![CDATA[]]></code></stage><stage stageid="330bceb9-6a32-496f-af63-a86d6c713037" name="Clean Up" type="SubSheetInfo"><subsheetid>de274717-620b-4e9b-a503-36263c3d31b9</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="003e323b-b120-4527-87f3-a5507eeebb05" name="Start" type="Start"><subsheetid>de274717-620b-4e9b-a503-36263c3d31b9</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><onsuccess>79f9d723-4678-452d-a7e8-8e56b315201c</onsuccess></stage><stage stageid="79f9d723-4678-452d-a7e8-8e56b315201c" name="End" type="End"><subsheetid>de274717-620b-4e9b-a503-36263c3d31b9</subsheetid><loginhibit onsuccess="true" /><display x="15" y="90" /></stage><stage stageid="fc793c74-4331-407d-9ec8-e8a6871983ba" name="Get Mail" type="SubSheetInfo"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit onsuccess="true" /><narrative>Uses internal code to automate Outlook for the purpose of reading and internally storing mail.
+
+
+Eg1 [From]='Mike Coworker' AND [unread]=False
+
+Eg2 [Unread]=True AND [ReceivedTime] &gt;= '2018/01/01'
+
+Eg3 @SQL=urn:schemas:httpmail:fromname='Mike Colleague' AND urn:schemas:httpmail:read=0
+
+Eg4 @SQL=urn:schemas:httpmail:fromname='The Boss' AND urn:schemas:httpmail:subject LIKE '%Urgent%'
+
+See https://msdn.microsoft.com/en-us/vba/outlook-vba/articles/items-restrict-method-outlook</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="45d61471-afe7-40a8-ac64-71b763736563" name="Start" type="Start"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit onsuccess="true" /><narrative>Grabs and stores mail locally. Requires process to handle its own cleanup post-call</narrative><display x="45" y="-135" /><inputs><input type="text" name="Profile" narrative="Optional - Outlook profile on system. Defaults to system default, IE Outlook" stage="Profile" /><input type="text" name="Subfolder" narrative="Optional - Inbox subfolder to start in, up to two levels deep" stage="Subfolder" /><input type="flag" name="Include Unread" narrative="Optional  - Include Unread. Defaults to True." stage="Include Unread" /><input type="flag" name="Include Read" narrative="Optional - Include Read. Defaults to False." stage="Include Read" /><input type="text" name="Sender Name" narrative="Optional - Sender name to search for. * wildcards accepted." stage="Sender Name" /><input type="text" name="Sender Email" narrative="Optional - Sender E-Mail to search for. * wildcards accepted." stage="Sender Email" /><input type="text" name="Subject" narrative="Optional - Subject to search for. * wildcards accepted." stage="Subject" /><input type="text" name="Message" narrative="Optional - Message body text to search for. * wildcards accepted." stage="Message" /><input type="datetime" name="Earliest Date" narrative="Optional - Earliest date to search for." stage="Earliest Date" /><input type="datetime" name="Latest Date" narrative="Optional - Latest date to search for." stage="Latest Date" /><input type="flag" name="HTML" narrative="Optional - Get mail as HTML" stage="HTML" /><input type="text" name="Filter Expression" narrative="Optional - Overrides all above inputs other than Profile. Filter for message. See action description/documentation for more info." stage="Filter Expression" /><input type="text" name="Shared E-mail" narrative="Optional - Address to search within if multiple inboxes are on the same profile." stage="Shared E-mail" /><input type="number" name="Outlook Folder ID" narrative="Optional - Defaults to 6 for inbox. Google OlDefaultFolders for list of values." stage="Outlook Folder ID" /><input type="flag" name="Mark Read" narrative="Optional - Defaults to False. Will mark all results as read if True." stage="Mark Read" /><input type="text" name="MoveTo" narrative="Optional - Inbox subfolder name to move the message to after reading" stage="MoveTo" /><input type="flag" name="Delete" narrative="Optional - Deletes the message upon reading" stage="Delete" /><input type="number" name="MaxCount" narrative="Optional - Specify a maximum number of e-mails to pull/return" stage="MaxCount" /><input type="flag" name="Oldest First?" narrative="Optional - Defaults to True" stage="Oldest" /><input type="text" name="Account Display NameOptional. DisplayName of the email account. " narrative="Optional. DisplayName of the email account. Default account is used if omitted." stage="Account Display Name" /></inputs><onsuccess>6c16cc4a-2bef-43da-8684-65b79862a98e</onsuccess></stage><stage stageid="d31791f0-f632-45a8-9f56-ebc5023ddf3e" name="Note1" type="Note"><subsheetid>de274717-620b-4e9b-a503-36263c3d31b9</subsheetid><loginhibit onsuccess="true" /><narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative><display x="-180" y="60" w="180" h="230" /></stage><stage stageid="cc6eb978-86c4-4aed-bc4d-4c384d58f25a" name="Note2" type="Note"><loginhibit onsuccess="true" /><narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative><display x="-180" y="60" w="180" h="230" /></stage><stage stageid="e2bbe2ce-6d9d-4011-8a81-8865dd25550b" name="Profile" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit onsuccess="true" /><display x="-210" y="-15" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="825de5fe-aa57-4867-8a6e-6d9e37937a92" name="Subfolder" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit onsuccess="true" /><display x="-255" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d6f533ab-b693-4096-9879-0656a9425bce" name="Include Unread" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit onsuccess="true" /><display x="-330" y="30" /><datatype>flag</datatype><initialvalue>True</initialvalue><private /><alwaysinit /></stage><stage stageid="658fe6a4-8329-4296-b4d9-877720eeee7e" name="Send Mail" type="SubSheetInfo"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><narrative>Uses code to automate Outlook for the purpose of sending  mail.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="d13b7cd6-295c-4980-b814-fc6c3031164c" name="Start" type="Start"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="105" y="-105" /><inputs><input type="text" name="Profile" narrative="Optional - Defines profile to send mail through. If not set, uses system default (IE Outlook)" stage="Profile" /><input type="text" name="SendFrom" narrative="Optional - Specifies which address to send as" stage="SendFrom" /><input type="text" name="To" narrative="Requred - Semicolon delimited list of e-mail addresses." stage="To" /><input type="text" name="CC" narrative="Optional - Semilcolon delimited list of CC addresses" stage="CC" /><input type="text" name="BCC" narrative="Optional - Semicolon delimited list of BCC addresses" stage="BCC" /><input type="text" name="Subject" narrative="Text for Subject line" stage="Subject" /><input type="text" name="MailBody" narrative="Text for mail body" stage="MailBody" /><input type="text" name="Attachment" narrative="Optional - Comma delimited list of file paths to attach" stage="Attachment" /><input type="flag" name="High" narrative="High Importance?" stage="High" /><input type="flag" name="HTML" narrative="Optional - Send message as HTML. Defaults to False" stage="HTML" /></inputs><onsuccess>06fd86f0-c982-4829-b2f4-ae222c6b0695</onsuccess></stage><stage stageid="8c8b130a-ef85-46b0-8388-a49f5cf9c941" name="Profile" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="-390" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="e2e41a70-a75d-4150-b59f-2782fe5a1c27" name="SendFrom" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="-345" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="78854858-9e92-40cd-beab-8b94272ae3c6" name="Subject" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="-165" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Test</initialvalue><private /><alwaysinit /></stage><stage stageid="baea0532-4b1a-4bb3-ab6b-b6bab56e5754" name="MailBody" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="-120" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Multi
+Line
+Test
+</initialvalue><private /><alwaysinit /></stage><stage stageid="b872b5da-39ad-40e2-8a00-f3c70daa09b9" name="Attachment" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit onsuccess="true" /><display x="-75" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="59cb1d0c-c068-4e8c-ab3e-1faae12e47ae" name="Delete Single Mail" type="SubSheetInfo"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit onsuccess="true" /><narrative>This deletes one mail by Entry ID from any mailboxes on the designated profile.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="47e2f517-385d-430b-a7a1-0d8e6685a56b" name="Start" type="Start"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="ID" narrative="REQUIRED - Deletes a message by Entry ID, stored in ID.txt by Get Mail" stage="ID" /></inputs><onsuccess>fcc66e6c-5d9a-40f5-a3e7-25394bbf1ec3</onsuccess></stage><stage stageid="01cfaa8c-c2be-4894-a812-2b23068d9ef0" name="Profile" type="Data"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="2d19021f-9b83-4fdf-b7c2-393fc2301bef" name="ID" type="Data"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit onsuccess="true" /><display x="-240" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="06fd86f0-c982-4829-b2f4-ae222c6b0695" name="Send" type="Code"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit /><display x="105" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="SendFrom" expr="[SendFrom]" /><input type="text" name="To" expr="[To]" /><input type="text" name="CC" expr="[CC]" /><input type="text" name="BCC" expr="[BCC]" /><input type="text" name="Subject" expr="[Subject]" /><input type="text" name="MailBody" expr="[MailBody]" /><input type="text" name="Attachment" expr="[Attachment]" /><input type="flag" name="High" expr="[High]" /><input type="flag" name="HTML" expr="[HTML]" /></inputs><onsuccess>7eb3ec08-a5ff-4a35-acd5-a4674db1e144</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+Dim mail = app.CreateItem(0)
+Dim addressCount As Integer
+
+If [To] <> "" Then
+	Dim toAddresses = Split([To], ";")
+	For addressCount = LBound(toAddresses) To UBound(toAddresses)
+	Dim recipient = mail.Recipients.Add(toAddresses(addressCount)) 
+	recipient.Resolve  
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olTo
+	Next 
+	
+End if
+
+If CC <> "" Then
+	Dim ccAddresses = Split([CC], ";")
+	addressCount = 0
+	For addressCount = LBound(ccAddresses) To UBound(ccAddresses)
+	Dim recipient = mail.Recipients.Add(ccAddresses(addressCount))
+	recipient.Resolve
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olCC 
+	Next
+
+End If
+
+If BCC <> "" Then
+	Dim bccAddresses = Split([BCC], ";")
+	addressCount = 0
+	For addressCount = LBound(bccAddresses) To UBound(bccAddresses)
+	Dim recipient = mail.Recipients.Add(bccAddresses(addressCount))
+	recipient.Resolve
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olBCC
+	Next
+
+End If
+
+If High
+	mail.Importance=2
+end If
+
+mail.Subject = Subject
+
+if HTML = True then
+	mail.BodyFormat = 2
+	mail.HTMLBody = MailBody
+	mail.Display
+else
+	Mail.Body = MailBody
+end if
+
+For Each att As String In Attachment.Split(";"c)
+	If att = "" Then Continue For
+	mail.Attachments.Add(att)
+Next
+
+if SendFrom <> Nothing
+	mail.SentOnBehalfOfName = SendFrom
+end if
+
+mail.Save
+mail.Send
+
+]]></code></stage><stage stageid="7eb3ec08-a5ff-4a35-acd5-a4674db1e144" name="End1" type="End"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><loginhibit /><display x="105" y="-15" /></stage><stage stageid="fcc66e6c-5d9a-40f5-a3e7-25394bbf1ec3" name="DeleteOne" type="Code"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit /><display x="15" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="ID" expr="[ID]" /></inputs><onsuccess>a304a201-4e55-42e8-81f5-4f122bc0064c</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(ID)
+item.Delete]]></code></stage><stage stageid="a304a201-4e55-42e8-81f5-4f122bc0064c" name="End3" type="End"><subsheetid>80ebe616-d02d-4734-b0d5-54d38692873b</subsheetid><loginhibit /><display x="15" y="-15" /></stage><stage stageid="4d50d400-1393-4e72-8a56-bcb5b7c617c6" name="Setup Instructions" type="Note"><narrative>1) Set Send/Receieve frequency
+-By default, Outlook will only perform this action every thirty minutes. We'll want to lower this to something more reasonable. Start with 2 minute and work your way up in one minute intervals if it causes issues.
+-Navigate to File -&gt; Options -&gt; Advanced -&gt; Send and receive -&gt; Send/Receive...
+	-Check the two boxes for "Schedule an automatic send/receive every [x] minutes"
+	-Set the minutes. Again, it's recommended to start with 2 and work up.
+
+2) Disable Automation protection
+-Restart Outlook as an Administrator (This only needs to be done once)
+-Navigate to File -&gt; Options -&gt; Trust Center -&gt; Trust Center Settings... -&gt; Programatic Access
+	-Choose the third option, "Never warn me about suspicious activity"
+-Restart Outlook
+
+3) Create any subfolder(s) you wish to use.
+-The Get Mail script will search the Inbox folder up to two levels deep for your specified folder. (IE Inbox/Subfolder/Subfolder)</narrative><display x="285" y="-45" w="420" h="270" /></stage><stage stageid="670b9a12-e201-4c81-9286-8a4e8b17bcc5" name="High" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><display x="-30" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="b8a86c3f-3af0-46d8-bd07-6666398d0d9e" name="HTML" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-165" y="-15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="5d475224-3406-4abc-bd26-d36a48cc2ccb" name="HTML" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><display x="15" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="78cbdd6b-05a8-45b7-9913-5570eff1a985" name="Mark single item read/unread" type="SubSheetInfo"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit onsuccess="true" /><narrative>This marks one mail read/unread by Entry ID. Will work on all mailboxes on the specified profile.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="ea2f6c56-b78c-45a4-b6a8-6a3b01f8264b" name="Start" type="Start"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="ID" narrative="REQUIRED - Deletes a message by Entry ID, stored in ID.txt by Get Mail" stage="ID" /><input type="flag" name="MarkRead" narrative="OPTIONAL - Marks as read or unread. Defaults to True" stage="MarkRead" /></inputs><onsuccess>e5b33eb8-98ac-4b04-a890-7e86a401b645</onsuccess></stage><stage stageid="de6413c1-0acb-47ab-836c-c1f7f4e2e682" name="Profile" type="Data"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit onsuccess="true" /><display x="-150" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="f4962cc6-cb20-4b65-8d4c-da4cecac0983" name="ID" type="Data"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="e5b33eb8-98ac-4b04-a890-7e86a401b645" name="MarkRead" type="Code"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit /><display x="15" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="ID" expr="[ID]" /><input type="flag" name="MarkRead" expr="[MarkRead]" /></inputs><onsuccess>0d9e6c26-4822-4d0f-8616-6ae1ad201b5d</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(ID)
+
+if MarkRead = True then
+	item.UnRead=0
+else
+	item.UnRead=1
+end if
+]]></code></stage><stage stageid="0d9e6c26-4822-4d0f-8616-6ae1ad201b5d" name="End3" type="End"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><loginhibit /><display x="15" y="-15" /></stage><stage stageid="c31f83e9-baa0-48e7-a804-410bda5fa242" name="MarkRead" type="Data"><subsheetid>1848b23d-8045-42fd-b06d-24f7acbae541</subsheetid><display x="-105" y="-30" /><datatype>flag</datatype><initialvalue>True</initialvalue><private /><alwaysinit /></stage><stage stageid="c938e13d-e150-4029-b1fd-c2aae76d53e5" name="Delete Mail" type="SubSheetInfo"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><loginhibit onsuccess="true" /><narrative>This clears out the 'Deleted Items' folder of a specified account. Defaults to all on profile.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="5bdddd8d-67f1-4c7b-9f9a-33548c5965d5" name="Start" type="Start"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="sharedAddress" narrative="Optional - E-mail address of account's deleted items folder to delete from. Use this if more than one is on the same profile, such as in the case of shared inboxes." stage="sharedAddress" /></inputs><onsuccess>c528f82d-c384-4341-be0d-568c92bd2074</onsuccess></stage><stage stageid="6b3a3c52-b2dd-4dfc-a78e-1676c83c90bb" name="Profile" type="Data"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><loginhibit onsuccess="true" /><display x="-150" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="c528f82d-c384-4341-be0d-568c92bd2074" name="DeleteShared" type="Code"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><loginhibit /><display x="15" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="sharedEmail" expr="[sharedAddress]" /></inputs><onsuccess>73d916cb-2933-47d8-898f-3789a0716b07</onsuccess><code><![CDATA[Dim olFolderInbox As Integer
+olFolderInbox = 3
+Dim Outlook as object
+Outlook = CreateObject("Outlook.Application")
+Dim inbox As object
+Dim olSharedRecip as object
+
+Dim ns as object
+ns = Outlook.GetNameSpace("MAPI")
+
+
+if Profile <> "" then
+    ns.Logon(Profile, , True, True)
+end if
+
+if sharedEmail <> Nothing then
+	olSharedRecip = ns.CreateRecipient(sharedEmail)
+	inbox = ns.GetSharedDefaultFolder(olSharedRecip, olFolderInbox)
+else
+	inbox = ns.GetDefaultFolder(olFolderInbox)
+end if
+
+Dim messages As Object
+messages = inbox.Items
+Dim messcount As Integer
+messcount = messages.count
+
+'Dim message as object
+
+messages.Sort("ReceivedTime", True)
+if messcount >0
+	Dim i as integer
+	for i = messcount to 1 step -1
+			messages.Item(i).Delete()
+	next
+end if]]></code></stage><stage stageid="73d916cb-2933-47d8-898f-3789a0716b07" name="End2" type="End"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><loginhibit /><display x="15" y="-15" /></stage><stage stageid="c39ad507-a065-4480-b402-90bb9f05871c" name="sharedAddress" type="Data"><subsheetid>7da0ec4b-f912-47ff-8d3c-18db9b069dc0</subsheetid><display x="-105" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="596ac4aa-4c34-4843-aeda-8b0f8419ae96" name="Move Single Mail" type="SubSheetInfo"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit onsuccess="true" /><narrative>Caution: If ANY shared inboxes are on the profile, use "Move Single Mail from Shared Inbox". Otherwise this will take a /very/ long time.
+
+This moves one mail from the specified folder to another specified folder by Entry ID, stored in ID.txt from Get Mail</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="60789c56-2464-4536-b885-635730309f46" name="Start" type="Start"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="ID" narrative="REQUIRED - Deletes a message by Entry ID, stored in ID.txt by Get Mail" stage="ID" /><input type="number" name="RootFolderID" narrative="Optional - Specifies Outlook folder ID of root folder for destination to move to. Defaults to 6, Inbox." stage="RootFolderID" /><input type="text" name="SubfolderName" narrative="Optional - Subfolder to move messages to post-process" stage="MoveTo" /><input type="text" name="SharedAddress" narrative="Optional - Specify an e-mail address on this profile to move within. Only useful when multiple inboxes are on a single profile." stage="sharedAddress" /></inputs><onsuccess>53e0858d-616f-4982-aee5-82feae94b283</onsuccess></stage><stage stageid="ff744644-c8ca-47f4-880c-202f0f721995" name="Profile" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="9fdf3880-ea02-4be5-8de0-cdfe9a84690e" name="ID" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit onsuccess="true" /><display x="-240" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="53e0858d-616f-4982-aee5-82feae94b283" name="MoveOne" type="Code"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit /><display x="15" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="number" name="RootFolderID" expr="[RootFolderID]" /><input type="text" name="ID" expr="[ID]" /><input type="text" name="moveTo" expr="[MoveTo]" /><input type="text" name="sharedEmail" expr="[sharedAddress]" /></inputs><outputs><output type="text" name="New Entry ID" stage="New Entry ID" /></outputs><onsuccess>06594435-1571-4de6-a945-0edf3149fd8b</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+Dim olSharedRecip as object
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+'Dim folder = _nameSpace.GetDefaultFolder(RootFolderID)
+Dim folder as object
+
+if sharedEmail <> Nothing then
+	olSharedRecip = _nameSpace.CreateRecipient(sharedEmail)
+	folder = _nameSpace.GetSharedDefaultFolder(olSharedRecip, RootFolderID)
+else
+	folder = _nameSpace.GetDefaultFolder(RootFolderID)
+end if
+
+Dim item = _nameSpace.GetItemFromID(ID)
+
+If moveTo <> "" Then
+	folder = folder.Folders(moveTo)
+End If
+
+New_Entry_ID = item.Move(folder).EntryID]]></code></stage><stage stageid="06594435-1571-4de6-a945-0edf3149fd8b" name="End3" type="End"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><loginhibit /><display x="15" y="-15" /><outputs><output type="text" name="New ID" narrative="New ID of moved email." stage="New Entry ID" /></outputs></stage><stage stageid="c4515b89-e409-43a4-82d6-a54cf87794be" name="MoveTo" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><display x="-105" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7612ec56-6991-4fd2-9b1c-050542fc40f2" name="Mark Tasked/Complete" type="SubSheetInfo"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit onsuccess="true" /><narrative>This marks an e-mail as tasked/complete or removes the status by Entry ID. Will work on any inbox attached to the same profile.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="f29ad52d-b630-44f2-a159-b6fc85966535" name="Start" type="Start"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="ID" narrative="REQUIRED - Deletes a message by Entry ID, stored in ID.txt by Get Mail" stage="ID" /><input type="text" name="subfolder" narrative="OPTIONAL - Defines a subfolder to look for the message in" stage="Subfolder" /><input type="text" name="markAs" narrative="Optional - Set as &quot;flag&quot; or &quot;done&quot;. Blank or any other value will clear the status. Not case-sensitive." stage="markAs" /></inputs><onsuccess>bbdeba46-3325-4df7-9462-a4bfaea1a220</onsuccess></stage><stage stageid="0cc0aee5-440a-4b66-bef2-b1126c2a19bf" name="Profile" type="Data"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="ebf3f4f5-9dc2-4257-a59c-8327055a8157" name="ID" type="Data"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit onsuccess="true" /><display x="-240" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="513868f6-44a1-4fc3-a5da-c196296bf5e8" name="Subfolder" type="Data"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit onsuccess="true" /><display x="-150" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="bc03efa4-0bd0-488e-b224-29b1f133ef2b" name="MarkComplete" type="Code"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit /><display x="15" y="-15" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="Subfolder" expr="[Subfolder]" /><input type="text" name="ID" expr="[ID]" /><input type="text" name="markAs" expr="[markAs]" /></inputs><onsuccess>8ee0f4e7-86df-4bac-8b1a-f28a97cb155e</onsuccess><code><![CDATA[Dim Outlook as object
+Outlook = CreateObject("Outlook.Application")
+
+Dim ns as object
+ns = Outlook.GetNameSpace("MAPI")
+
+if Profile <> "" then
+    ns.Logon(Profile, , True, True)
+end if
+Dim item = ns.GetItemFromID(ID)
+
+
+if markAs = "flag" then
+	item.FlagIcon = 6
+	item.FlagStatus = 2
+	item.FlagRequest = "Follow up"
+	item.ReminderSet = False
+else if markAs = "done" then
+	item.FlagIcon = 0
+	item.FlagStatus = 1
+	item.FlagRequest = "Completed"
+	item.ReminderSet = False
+else
+	item.FlagIcon = 0
+	item.FlagStatus = 0
+	item.FlagRequest = ""
+	item.ReminderSet = False
+end if]]></code></stage><stage stageid="8ee0f4e7-86df-4bac-8b1a-f28a97cb155e" name="End3" type="End"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit /><display x="15" y="30" /></stage><stage stageid="b63c153a-2ac9-44f2-a50a-b9a982cd32b3" name="markAs" type="Data"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><display x="-105" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="bbdeba46-3325-4df7-9462-a4bfaea1a220" name="ToLower" type="Calculation"><subsheetid>5e85f602-0aee-4a9f-8b82-763ccca90973</subsheetid><loginhibit /><display x="15" y="-60" /><onsuccess>bc03efa4-0bd0-488e-b224-29b1f133ef2b</onsuccess><calculation expression="Lower([markAs])" stage="markAs" /></stage><stage stageid="764286d1-bfa8-4163-9800-a4081384e178" name="Forward Mail" type="SubSheetInfo"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><narrative>Uses code to automate Outlook for the purpose of forwarding mail.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="fe9e0ec4-da06-441d-845a-e690d87906dc" name="Start" type="Start"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><display x="105" y="-105" /><inputs><input type="text" name="Profile" narrative="Optional - Defines profile to send mail through. If not set, uses system default (IE Outlook)" stage="Profile" /><input type="text" name="SendFrom" narrative="Optional - Specifies which address to send as" stage="SendFrom" /><input type="text" name="To" narrative="Required - Semicolon delimited list of To Addresses" stage="To" /><input type="text" name="CC" narrative="Optional - Semicolon delimited list of CC addresses" stage="CC" /><input type="text" name="BCC" narrative="Optional - Semicolon delimited list of BCC addresses" stage="BCC" /><input type="text" name="New Subject( if need)" narrative="Optional - Text for new Subject line incase you dont send with forward subject" stage="Subject" /><input type="text" name="MailBody" narrative="Text for mail body" stage="MailBody" /><input type="text" name="Attachment" narrative="Optional - Comma separated list of file paths for attachments" stage="Attachment" /><input type="flag" name="NoForwardAttachments" narrative="Optional - Dont include the attachmets in forward email" stage="DeleteAllAttactment" /><input type="flag" name="High" narrative="High Importance?" stage="High" /><input type="flag" name="HTML" narrative="Optional - Send message as HTML. Defaults to False" stage="HTML" /><input type="text" name="Mail ID" stage="EntryID" /></inputs><onsuccess>9bc078ca-6ed6-437e-a9ac-a43360cc462b</onsuccess></stage><stage stageid="97b0ca08-ff83-45e3-8405-25ac77e2aca8" name="Profile" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><display x="-390" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="651421e9-fee7-40e2-8448-7d20dec97328" name="SendFrom" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><display x="-345" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7d1d0387-d2d8-47ea-81cf-b6bc611f865a" name="DeleteAllAttactment" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><display x="-165" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="92954a0b-c36a-406a-b6c4-0e76003b4ff6" name="MailBody" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><narrative>&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;u&gt;aaaaaaaaaaaaaa&lt;/u&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;</narrative><display x="-120" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Multi
+Line
+Test
+</initialvalue><private /><alwaysinit /></stage><stage stageid="ca77f2c3-3d90-430d-92b6-a1d91f9c3276" name="Attachment" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit onsuccess="true" /><narrative>C:\bp\Attachments\PAN.pdf</narrative><display x="-75" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="48e7852a-76d5-4fb3-a045-21131f1b4f04" name="End1" type="End"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit /><display x="105" y="-15" /></stage><stage stageid="17302eaa-c2cf-48cd-a176-8b1bf16fcd8d" name="High" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="-30" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="679f7322-212b-4473-b09e-7158119de6da" name="HTML" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="15" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="978343e1-ee73-4e26-85e0-5f76e40c4e5c" name="EntryID" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit /><display x="-75" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="eda55a6b-2c75-4f3e-929a-9e28700a08f8" name="Subject" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="-225" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="9bc078ca-6ed6-437e-a9ac-a43360cc462b" name="Forward" type="Code"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><loginhibit /><display x="105" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="SendFrom" expr="[SendFrom]" /><input type="text" name="To" expr="[To]" /><input type="text" name="CC" expr="[CC]" /><input type="text" name="BCC" expr="[BCC]" /><input type="text" name="MailBody" expr="[MailBody]" /><input type="flag" name="DeleteAllAttactment" expr="[DeleteAllAttactment]" /><input type="text" name="Attachment" expr="[Attachment]" /><input type="flag" name="High" expr="[High]" /><input type="flag" name="HTML" expr="[HTML]" /><input type="text" name="EntryID" expr="[EntryID]" /><input type="text" name="Subject" expr="[Subject]" /></inputs><onsuccess>48e7852a-76d5-4fb3-a045-21131f1b4f04</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(EntryID)
+Dim mail = item.Forward
+Dim addressCount As Integer
+
+If [To] <> "" Then
+	Dim toAddresses = Split([To], ";")
+	For addressCount = LBound(toAddresses) To UBound(toAddresses)
+	Dim recipient = mail.Recipients.Add(toAddresses(addressCount)) 
+	recipient.Resolve
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olTo
+	Next
+
+End If
+
+If CC <> "" Then
+	Dim ccAddresses = Split([CC], ";")
+	addressCount = 0
+	For addressCount = LBound(ccAddresses) To UBound(ccAddresses)
+	Dim recipient = mail.Recipients.Add(ccAddresses(addressCount))
+	recipient.Resolve	
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olCC
+	Next
+
+End If
+	
+If BCC <> "" Then
+	Dim bccAddresses = Split([BCC], ";")
+	addressCount = 0
+	For addressCount = LBound(bccAddresses) To UBound(bccAddresses)
+	Dim recipient = mail.Recipients.Add(bccAddresses(addressCount))
+	recipient.Resolve
+	If recipient.Resolved Then recipient.Type = OlMailRecipientType.olBCC
+	Next
+
+End If
+
+If High
+	mail.Importance=2
+end If
+
+if Subject <> nothing
+	mail.Subject = Subject
+else
+	mail.Subject = "FW: " & item.Subject
+end if
+
+'mail.HTMLBody = Message & vbCrLf & mail.HTMLBody
+
+
+Dim ForwardBody as String
+
+
+if HTML = True then
+	mail.BodyFormat = 2
+	ForwardBody = "*****Original Message*****" & "<br>" & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]<br>" & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") &Format(item.ReceivedTime, "h:mm:ss tt") & "<br>" & "To: " & item.To & "<br>Subject: " & item.Subject
+	mail.HTMLBody = MailBody & "<br><br><p>" & ForwardBody & "</p><br>" & item.HTMLBody
+	mail.Display
+else
+	ForwardBody = "*****Original Message*****" & vbNewLine & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]" & vbNewLine & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") & Format(item.ReceivedTime, "h:mm:ss tt") & vbNewLine & "To: " & item.To & vbNewLine & "Subject: " & item.Subject 
+	mail.Body = MailBody & vbCrlf & vbCrlf & vbCrlf & ForwardBody & vbCrlf & vbCrlf & item.Body
+end if
+
+if DeleteAllAttactment = false then
+	Do Until mail.Attachments.Count = 0
+		mail.Attachments.Remove(1)
+		'mail.Attachments.Add(item)
+	Loop
+end if
+
+For Each att As String In Attachment.Split(";"c)
+	If att = "" Then Continue For
+	mail.Attachments.Add(att)
+Next
+
+if SendFrom <> Nothing
+	mail.SentOnBehalfOfName = SendFrom
+end if
+
+mail.Save
+mail.Send]]></code></stage><stage stageid="5faf5738-d43f-476e-a854-d79c2ce51da5" name="Items" type="Collection"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-240" y="90" w="150" h="60" /><datatype>collection</datatype><private /><alwaysinit /><collectioninfo><field name="EntryID" type="text" description="The mail ID. NB this is different from the Mapiex ID." /><field name="To" type="text" description="The display name of the recipient(s)" /><field name="CC" type="text" description="The display name of the copied recipient(s)" /><field name="Subject" type="text" description="The mail subject line" /><field name="Body" type="text" description="The mail message" /><field name="Attachments" type="text" description="The names of the attachements as a CSV string" /><field name="ReceivedOn" type="datetime" description="The date an incoming mail was received" /><field name="SentOn" type="datetime" description="The date an outgoing mail was sent" /><field name="SenderName" type="text" description="The display name of the sender" /><field name="SenderEmailAddress" type="text" description="The email of the sender" /><field name="Unread" type="flag" description="True if an incoming mail has not been read, otherwise False" /></collectioninfo></stage><stage stageid="b6b64b37-4c90-4bbe-b852-9be2b388e81c" name="Note4" type="Note"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><narrative>Supported API DASL filters expressions:
+
+urn:schemas:httpmail:attachmentfilename
+urn:schemas:httpmail:bcc
+urn:schemas:httpmail:cc
+urn:schemas:httpmail:date
+urn:schemas:httpmail:datereceived
+urn:schemas:httpmail:displaycc
+urn:schemas:httpmail:displayto
+urn:schemas:httpmail:from
+urn:schemas:httpmail:fromemail
+urn:schemas:httpmail:fromname
+urn:schemas:httpmail:hasattachment
+urn:schemas:httpmail:importance
+urn:schemas:httpmail:senderemail
+urn:schemas:httpmail:sendername
+urn:schemas:httpmail:subject
+urn:schemas:httpmail:submitted
+urn:schemas:httpmail:textdescription
+urn:schemas:httpmail:to
+</narrative><display x="450" y="0" w="180" h="240" /></stage><stage stageid="92a29c70-f16a-4a6e-bf4c-78323f23da07" name="Note3" type="Note"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><narrative>API functions provided for the advanced filter expressions:
+
+BCC = Returns a String representing the display list of blind carbon copy (BCC) names for a MailItem. Read/write.
+Body = Returns or sets a String representing the clear-text body of the Outlook item. Read/write.
+CC = Returns a String representing the display list of carbon copy (CC) names for a MailItem . Read/write.
+CreationTime = Returns a Date indicating the creation time for the Outlook item. Read-only.
+EntryID = Returns a String representing the unique Entry ID of the object. Read-only.
+HTMLBody = Returns or sets a String representing the HTML body of the specified item. Read/write.
+ReceivedTime = Returns a Date indicating the date and time at which the item was received. Read-only.
+SenderEmailAddress = Returns a String that represents the e-mail address of the sender of the Outlook item. Read-only.
+SenderName = Returns a String indicating the display name of the sender for the Outlook item. Read-only.
+SentOn = Returns a Date indicating the date and time on which the Outlook item was sent. Read-only.
+Subject = Returns or sets a String indicating the subject for the Outlook item. Read/write.
+To = Returns or sets a semicolon-delimited String list of display names for the To recipients for the Outlook item. Read/write.
+UnRead = Returns or sets a Boolean value that is True if the Outlook item has not been opened (read). Read/write.
+</narrative><display x="765" y="0" w="480" h="210" /></stage><stage stageid="24e268b0-aedc-4d50-ae71-cfced326b10d" name="Filter Expression" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-300" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="378727d5-0a60-4b1b-9c57-be2c47ce9ff0" name="Internal_Get Items" type="SubSheetInfo"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><narrative>Sub function used by multiple actions within VBO. Do not change or publish.
+
+Uses the Restrict method to create a filtered list of folder items. Not intended for publication.
+
+</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="a5f36c2e-ae0e-43f6-8347-2a6dc4906db8" name="Start" type="Start"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><display x="15" y="-90" /><inputs><input type="text" name="Filter Expression" narrative="Mandatory. A MAPI filter, eg [From]='Mike Colleague' AND [unread] = True" stage="Filter Expression" /><input type="number" name="Outlook Folder ID" narrative="Mandatory. Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent" stage="Outlook Folder ID" /><input type="text" name="Sub Folder" narrative="Optional, default blank. The inbox sub folder to look in." stage="Sub Folder" /><input type="text" name="Profile" narrative="Optional, Profile in Outlook" stage="Profile" /><input type="text" name="Shared Address" narrative="Optional, Address of shared mailbox" stage="SharedAddress" /><input type="flag" name="HTML?" narrative="Optional, if E-Mail should be retrieved as HTML instead of plain-text." stage="HTML?" /><input type="flag" name="Mark Read" narrative="Optional - Defaults to False. Will mark all results as read if True." stage="Mark Read" /><input type="flag" name="Delete" narrative="Optional - Delete message after processing. Defaults to False." stage="Delete" /><input type="text" name="MoveTo" narrative="Optional - Move the message to another inbox subfolder after processing." stage="MoveTo" /><input type="number" name="MaxCount" narrative="Optional - Specify a maximum number of e-mails to pull/return" stage="MaxCount" /><input type="flag" name="Oldest" narrative="Optional - Defaults to True." stage="Oldest" /><input type="text" name="Account Display Name" narrative="Optional. DisplayName of the email account. Default account is used if omitted." stage="Account Display Name" /></inputs><onsuccess>4df2f912-5c05-4a5d-b0c8-24ae8cfa4492</onsuccess></stage><stage stageid="5385170c-246b-490d-85e9-85b62ab1ac6d" name="End" type="End"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><display x="15" y="105" /><outputs><output type="collection" name="Items" narrative="Details of items matching the filter" stage="Items" /><output type="number" name="Item Count" narrative="Number of items matching the filter" stage="Item Count" /></outputs></stage><stage stageid="4df2f912-5c05-4a5d-b0c8-24ae8cfa4492" name="Get Items" type="Code"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><display x="15" y="0" /><inputs><input type="text" name="Filter Expression" expr="[Filter Expression]" /><input type="number" name="Outlook Folder ID" expr="[Outlook Folder ID]" /><input type="text" name="Sub Folder" expr="[Sub Folder]" /><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="sharedEmail" expr="[SharedAddress]" /><input type="flag" name="HTML" expr="[HTML?]" /><input type="flag" name="MarkRead" expr="[Mark Read]" /><input type="flag" name="Delete" expr="[Delete]" /><input type="text" name="MoveTo" expr="[MoveTo]" /><input type="number" name="MaxCount" expr="[MaxCount]" /><input type="flag" name="Oldest" expr="[Oldest]" /><input type="text" name="Account Display Name" expr="[Account Display Name]" /></inputs><outputs><output type="collection" name="Items" stage="Items" /><output type="number" name="Item Count" stage="Item Count" /></outputs><onsuccess>5385170c-246b-490d-85e9-85b62ab1ac6d</onsuccess><code><![CDATA[Dim PR_SMTP_ADDRESS As String = "https://schemas.microsoft.com/mapi/proptag/0x39FE001E"
+Dim app = CreateObject("Outlook.Application")
+'Dim _nameSpace = app.GetNameSpace("MAPI")
+'Dim folder = _nameSpace.GetDefaultFolder(Outlook_Folder_ID)
+'Dim olSharedRecip as object
+
+Dim _nameSpace As Microsoft.Office.Interop.Outlook.NameSpace = app.GetNameSpace("MAPI")
+
+Dim folder As Folder
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+'if sharedEmail <> Nothing then
+'	olSharedRecip = _nameSpace.CreateRecipient(sharedEmail)
+'	folder = _nameSpace.GetSharedDefaultFolder(olSharedRecip, Outlook_Folder_ID)
+'end if
+
+If Not String.IsNullOrEmpty(sharedEmail) Then
+	Dim recipient = _nameSpace.CreateRecipient(sharedEmail)
+    recipient.Resolve()
+	If recipient.Resolved Then
+		folder = _nameSpace.GetSharedDefaultFolder(recipient, Outlook_Folder_ID)
+	Else
+		Dim ex1 As New System.Exception(VbCrlf + "Failed to resolve shared mailbox '" + sharedEmail + "'.")
+		Throw ex1
+	End If
+Else
+	If Not String.IsNullOrEmpty(Account_Display_Name) Then
+		Try
+			Dim aa As List(Of Account) = _nameSpace.Accounts.Cast(Of Account).ToList()
+			folder  = aa.Where(Function(x) x.DisplayName = Account_Display_Name).FirstOrDefault().DeliveryStore.GetDefaultFolder(Outlook_Folder_ID)
+		Catch ex As System.Exception
+			Dim ex1 As New System.Exception(VbCrlf + "Failed to retrieve default folder for Account Display Name '" + Account_Display_Name + "'." + VbCrlf + ex.Message)
+			Throw ex1
+		End Try
+	Else
+		folder = _nameSpace.GetDefaultFolder(Outlook_Folder_ID)
+	End If
+End If
+
+If Sub_Folder <> "" Then
+	''if sharedEmail <> Nothing then
+	''	folder = app.ActiveExplorer.CurrentFolder
+	''else
+		For each name as string in Sub_Folder.Split("\")
+			folder = folder.Folders(name)
+		Next
+	''end if
+End If
+
+'See https://msdn.microsoft.com/en-us/library/office/aa210946(v=office.11).aspx
+'for mail item properties
+Dim dataTable As New Data.DataTable
+dataTable.Columns.Add("EntryID", Type.GetType("System.String"))
+dataTable.Columns.Add("To", Type.GetType("System.String"))
+dataTable.Columns.Add("CC", Type.GetType("System.String"))
+dataTable.Columns.Add("Subject", Type.GetType("System.String"))
+dataTable.Columns.Add("Body", Type.GetType("System.String"))
+dataTable.Columns.Add("Attachments", Type.GetType("System.String"))
+dataTable.Columns.Add("ReceivedOn", Type.GetType("System.DateTime"))
+dataTable.Columns.Add("SentOn", Type.GetType("System.DateTime"))
+dataTable.Columns.Add("SenderName", Type.GetType("System.String"))
+dataTable.Columns.Add("SenderEmailAddress", Type.GetType("System.String"))
+dataTable.Columns.Add("Unread", Type.GetType("System.Boolean"))
+
+Dim i = 1
+
+'Due to the filter string, this is stored as a dynamic COM object. Any modification to a mail item (IE mark read, move, delete) will cause the array length to change and will break the for each.
+Requeue:
+Dim folderItems = If(Filter_Expression <> "", folder.Items.Restrict(Filter_Expression), folder.Items)
+
+if Oldest then
+	folderItems.Sort("[SentOn]",False)
+else
+	folderItems.Sort("[SentOn]",True)
+end if
+
+For Each item As Object In folderItems
+	If Not TypeOf item Is MailItem Then Continue For
+	Dim row As Data.DataRow = dataTable.NewRow
+	row("EntryID") = item.EntryID
+	row("To") = item.To
+	row("CC") = item.CC
+	row("Subject") = item.Subject
+	if HTML = True
+		row("Body") = item.HTMLBody
+	else
+		row("Body") = item.Body
+	end if
+	
+	if MarkRead = True then
+		item.UnRead=0
+	end if
+	
+	Dim attachments As String = ""
+	For Each attachment As Object In item.Attachments
+        If attachment.Type = 1 Then
+			attachments = attachments & "|" & attachment.DisplayName
+		End If
+	Next
+	
+	row("Attachments") = If (attachments.Length = 0, "", attachments.SubString(1))
+	row("SentOn") = item.SentOn
+	row("ReceivedOn") = item.ReceivedTime
+	row("SenderName") = item.SenderName
+	If item.SenderEmailType = "EX" Then
+		Dim sender As AddressEntry = item.Sender
+		If sender IsNot Nothing Then
+			If sender.AddressEntryUserType = OlAddressEntryUserType.olExchangeUserAddressEntry OrElse sender.AddressEntryUserType = OlAddressEntryUserType.olExchangeRemoteUserAddressEntry Then
+				Dim exchUser As ExchangeUser = sender.GetExchangeUser()
+				If exchUser IsNot Nothing Then
+					row("SenderEmailAddress") = exchUser.PrimarySmtpAddress
+				End If
+			ElseIf sender.AddressEntryUserType = OlAddressEntryUserType.olExchangeDistributionListAddressEntry Then
+				Dim exchDL As ExchangeDistributionList = sender.GetExchangeDistributionList
+				If exchDL IsNot Nothing Then
+					row("SenderEmailAddress") = exchDL.PrimarySmtpAddress
+				End If
+			Else
+				row("SenderEmailAddress") = TryCast(sender.PropertyAccessor.GetProperty(PR_SMTP_ADDRESS), String)
+			End If
+		End If
+	Else
+		row("SenderEmailAddress") = item.SenderEmailAddress
+	End If
+	row("Unread") = item.Unread
+	dataTable.Rows.Add(row)
+	Item_Count += 1
+	
+	dim New_Entry_ID = "foobar"
+
+	if moveTo <> "" then
+		if Delete <> True then
+			Dim MoveTarget = folder.Folders.item(moveTo)
+			New_Entry_ID=item.Move(MoveTarget).EntryID
+		end if
+    end if
+
+	'If the ID has changed, pass that to the collection instead, so we know how to find it. The original ID will have been invalidated, anyway.
+	if New_Entry_ID <> "foobar" then
+		row("EntryID") = New_Entry_ID
+	end if
+
+	if Delete = True then
+		item.Delete()
+    end if
+
+	i = i+1
+	if MaxCount > 0 and i >= MaxCount
+		exit for
+	end if
+	if MarkRead or Delete or moveTo <>"" then
+		goto Requeue
+	end if
+Next
+Items = dataTable]]></code></stage><stage stageid="6277bc98-05f3-46a6-81b9-84c309404df2" name="Item Count" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-195" y="180" w="150" h="30" /><datatype>number</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="e39a6198-0017-4605-80c6-e88238d84583" name="Filter Expression" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-195" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="55a0c190-46cd-4dd9-8883-ce7a4098d42e" name="Outlook Folder ID" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><narrative>Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent</narrative><display x="-195" y="15" w="150" h="30" /><datatype>number</datatype><initialvalue>6</initialvalue><private /><alwaysinit /></stage><stage stageid="f9fe300b-01db-4028-ae50-9c9dc4777493" name="Sub Folder" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-195" y="45" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="a15e1222-3c58-43c8-b0bf-05c5d743c8b5" name="Items" type="Collection"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-195" y="135" w="150" h="60" /><datatype>collection</datatype><private /><alwaysinit /><collectioninfo><field name="EntryID" type="text" description="The mail ID. NB this is different from the Mapiex ID." /><field name="To" type="text" description="The display name of the recipient(s)" /><field name="CC" type="text" description="The display name of the copied recipient(s)" /><field name="Subject" type="text" description="The mail subject line" /><field name="Body" type="text" description="The mail message" /><field name="Attachments" type="text" description="The names of the attachements as a CSV string" /><field name="ReceivedOn" type="datetime" description="The date an incoming mail was received" /><field name="SentOn" type="datetime" description="The date an outgoing mail was sent" /><field name="SenderName" type="text" description="The display name of the sender" /><field name="SenderEmailAddress" type="text" description="The email of the sender" /><field name="Unread" type="flag" description="True if an incoming mail has not been read, otherwise False" /></collectioninfo></stage><stage stageid="fa27e1f7-57a8-4483-9708-086658b3b646" name="Note2" type="Note"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><narrative>NOT FOR PUBLICATION</narrative><display x="15" y="-135" w="150" h="30" /><font family="Segoe UI" size="20" style="Regular" color="FF0000" /></stage><stage stageid="9c59f69f-19c3-4a73-a4dc-51814c865e5c" name="Input" type="Block"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><display x="-675" y="-45" w="555" h="120" /><font family="Segoe UI" size="10" style="Regular" color="7FB2E5" /></stage><stage stageid="ce4bf4db-4de2-4a2b-a485-b47b1eafedd1" name="Output" type="Block"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><loginhibit /><display x="-270" y="90" w="150" h="120" /><font family="Segoe UI" size="10" style="Regular" color="FFFF99" /></stage><stage stageid="d4375bdb-0308-4912-9898-8e6d34ab8fdd" name="Profile" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-330" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="1fe1a471-207d-4ffc-95b5-038a34f1af2b" name="SharedAddress" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-330" y="15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d146ab15-8805-4a6f-9f11-205d88d2795c" name="Outlook Folder ID" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-345" y="-15" /><datatype>number</datatype><initialvalue>6</initialvalue><private /><alwaysinit /></stage><stage stageid="6394fc95-ee70-4582-9b5b-2a9beb493ff8" name="Include Read" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-375" y="30" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="24e66338-e25c-4f76-858c-c6ca4e106b1a" name="Sender Name" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-285" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="434bfb88-788a-494d-8d93-76789d081204" name="Sender Email" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-150" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="877db909-d473-4e2f-b104-d02a41372d59" name="Subject" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-240" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="0ae71cae-6b68-4631-b0aa-7aaf85d37885" name="Message" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-195" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="f1632348-76bb-4be3-9e27-4d03b73aec10" name="Earliest Date" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-60" y="30" /><datatype>datetime</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="2185afd3-05bc-4ceb-9217-9d64be806cde" name="Latest Date" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-105" y="30" /><datatype>datetime</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="b710d7bb-b2c5-49d0-aaa0-12ca6d273496" name="Internal_Get Items" type="SubSheet"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="45" y="420" /><inputs><input type="text" name="Filter Expression" narrative="Mandatory. A MAPI filter, eg [From]='Mike Colleague' AND [unread] = True" expr="[Filter Expression]" /><input type="number" name="Outlook Folder ID" narrative="Mandatory. Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent" expr="[Outlook Folder ID]" /><input type="text" name="Sub Folder" narrative="Optional, default blank. The inbox sub folder to look in." expr="[Subfolder]" /><input type="text" name="Profile" narrative="Optional, Profile in Outlook" expr="[Profile]" /><input type="text" name="Shared Address" narrative="Optional, Address of shared mailbox" expr="[Shared E-mail]" /><input type="flag" name="HTML?" narrative="Optional, if E-Mail should be retrieved as HTML instead of plain-text." expr="[HTML]" /><input type="flag" name="Mark Read" narrative="Optional - Defaults to False. Will mark all results as read if True." expr="[Mark Read]" /><input type="flag" name="Delete" narrative="Optional - Delete message after processing. Defaults to False." expr="[Delete]" /><input type="text" name="MoveTo" narrative="Optional - Move the message to another inbox subfolder after processing." expr="[MoveTo]" /><input type="number" name="MaxCount" narrative="Optional - Specify a maximum number of e-mails to pull/return" expr="[MaxCount]" /><input type="flag" name="Oldest" narrative="Optional - Defaults to True." expr="[Oldest]" /><input type="text" name="Account Display Name" friendlyname="Account Display Name" narrative="Optional. DisplayName of the email account. Default account is used if omitted." expr="[Account Display Name]" /></inputs><outputs><output type="collection" name="Items" narrative="Details of items matching the filter" stage="Items" /><output type="number" name="Item Count" narrative="Number of items matching the filter" stage="Item Count" /></outputs><onsuccess>3285bc66-b48d-4a15-9cd2-41612f7ba32b</onsuccess><processid>95b1d477-2963-4353-a189-38504ed09fad</processid></stage><stage stageid="3285bc66-b48d-4a15-9cd2-41612f7ba32b" name="End" type="End"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="45" y="480" /><outputs><output type="collection" name="Items" narrative="Details of items matching the filter" stage="Items" /><output type="number" name="Item Count" narrative="Number of items matching the filter" stage="Item Count" /></outputs></stage><stage stageid="df812a2b-63a2-4b7d-84bd-5949edcaca3c" name="Sender Name?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="-45" /><decision expression="[Sender Name]&lt;&gt;&quot;&quot;" /><ontrue>b866178c-9690-4242-9af8-d8a2d6214843</ontrue><onfalse>7aa66f98-621d-420c-bb32-d7e4e4dc140b</onfalse></stage><stage stageid="b866178c-9690-4242-9af8-d8a2d6214843" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="-45" /><onsuccess>7aa66f98-621d-420c-bb32-d7e4e4dc140b</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:sendername LIKE '&quot;&amp;Replace([Sender Name], &quot;*&quot;, &quot;%&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="a1553cd9-72b1-4414-b20a-1bb3419597f2" name="Clean Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="330" /><onsuccess>bdca7043-a40c-4d93-a907-be8213b706c1</onsuccess><calculation expression="Trim(Mid([Filter Expression], 6, Len([Filter Expression])))" stage="Filter Expression" /></stage><stage stageid="6c71b4b5-9160-431d-95c7-105b5390cf05" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="45" /><onsuccess>1dd8b4f8-b61d-4f9e-a9a7-5272ed3b520f</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:subject LIKE '&quot;&amp;Replace([Subject], &quot;*&quot;, &quot;%&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="b57ec0e1-5e81-47a4-87ad-61e2f4f48d87" name="Subject?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="45" /><decision expression="[Subject]&lt;&gt;&quot;&quot;" /><ontrue>6c71b4b5-9160-431d-95c7-105b5390cf05</ontrue><onfalse>1dd8b4f8-b61d-4f9e-a9a7-5272ed3b520f</onfalse></stage><stage stageid="7aa66f98-621d-420c-bb32-d7e4e4dc140b" name="Sender Email?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="0" /><decision expression="[Sender Email]&lt;&gt;&quot;&quot;" /><ontrue>1ada2b48-2eef-47a8-bfd5-abe147b31b32</ontrue><onfalse>b57ec0e1-5e81-47a4-87ad-61e2f4f48d87</onfalse></stage><stage stageid="1ada2b48-2eef-47a8-bfd5-abe147b31b32" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="0" /><onsuccess>b57ec0e1-5e81-47a4-87ad-61e2f4f48d87</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:senderemail LIKE '&quot;&amp;Replace([Sender Email], &quot;*&quot;, &quot;%&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="bdca7043-a40c-4d93-a907-be8213b706c1" name="Filter Expression?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="375" /><decision expression="[Filter Expression]&lt;&gt;&quot;&quot;" /><ontrue>602d30ea-8fe8-4f5e-bb04-42a147131df4</ontrue><onfalse>b710d7bb-b2c5-49d0-aaa0-12ca6d273496</onfalse></stage><stage stageid="602d30ea-8fe8-4f5e-bb04-42a147131df4" name="Prepend" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="375" /><onsuccess>b710d7bb-b2c5-49d0-aaa0-12ca6d273496</onsuccess><calculation expression="&quot;@SQL=&quot;&amp;[Filter Expression]" stage="Filter Expression" /></stage><stage stageid="2a22a286-88d2-4bc2-8b78-3fe33d738edc" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="270" /><onsuccess>a1553cd9-72b1-4414-b20a-1bb3419597f2</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:read=0&quot;" stage="Filter Expression" /></stage><stage stageid="41f1a388-c80f-4843-bbce-66bbde99a217" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="135" /><onsuccess>efcf7f68-497e-43f3-99f2-26678a248004</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:datereceived&gt;='&quot; &amp; FormatDateTime([Earliest Date], &quot;dd MMMM yyyy HH:mm&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="e861f624-2cad-44ad-b3b1-90a963e4241d" name="Earliest?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="135" /><decision expression="IsDate([Earliest Date])" /><ontrue>41f1a388-c80f-4843-bbce-66bbde99a217</ontrue><onfalse>efcf7f68-497e-43f3-99f2-26678a248004</onfalse></stage><stage stageid="efcf7f68-497e-43f3-99f2-26678a248004" name="Latest" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="180" /><decision expression="IsDate([Latest Date])" /><ontrue>6dfc38a1-5f88-487f-b645-46fd8cc683cc</ontrue><onfalse>860f5e50-b2a7-475d-9745-d92ae39c862b</onfalse></stage><stage stageid="6dfc38a1-5f88-487f-b645-46fd8cc683cc" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="180" /><onsuccess>860f5e50-b2a7-475d-9745-d92ae39c862b</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:datereceived&lt;='&quot; &amp; FormatDateTime([Latest Date], &quot;dd MMMM yyyy HH:mm&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="860f5e50-b2a7-475d-9745-d92ae39c862b" name="Unread Only?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="225" /><decision expression="[Include Unread]=True AND [Include Read]=False" /><ontrue>2a22a286-88d2-4bc2-8b78-3fe33d738edc</ontrue><onfalse>a1b06e76-36b2-4a17-8106-adb8c81c8c87</onfalse></stage><stage stageid="a1b06e76-36b2-4a17-8106-adb8c81c8c87" name="Read Only?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="225" /><decision expression="[Include Read]=True AND [Include Unread]=False" /><ontrue>5b0f163c-ffee-4012-9ff4-0a226fb00ac0</ontrue><onfalse>44376f01-6e7c-47b9-9b72-d0cb76c5eeb8</onfalse></stage><stage stageid="5b0f163c-ffee-4012-9ff4-0a226fb00ac0" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="270" /><onsuccess>12f0fdc8-8eb6-4d8e-b715-7140a77b6825</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:read=1&quot;" stage="Filter Expression" /></stage><stage stageid="44376f01-6e7c-47b9-9b72-d0cb76c5eeb8" name="Anchor1" type="Anchor"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="270" y="225" w="10" h="10" /><onsuccess>c83547f0-4ffd-4704-8fce-22f2cb7ac5ab</onsuccess></stage><stage stageid="c83547f0-4ffd-4704-8fce-22f2cb7ac5ab" name="Anchor1" type="Anchor"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="270" y="330" w="10" h="10" /><onsuccess>12f0fdc8-8eb6-4d8e-b715-7140a77b6825</onsuccess></stage><stage stageid="12f0fdc8-8eb6-4d8e-b715-7140a77b6825" name="Anchor1" type="Anchor"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="330" w="10" h="10" /><onsuccess>a1553cd9-72b1-4414-b20a-1bb3419597f2</onsuccess></stage><stage stageid="9fdc22d7-6957-4cc0-b713-1dc3ef7b9f99" name="Filter Expression" type="Calculation"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="210" y="90" /><onsuccess>e861f624-2cad-44ad-b3b1-90a963e4241d</onsuccess><calculation expression="[Filter Expression]&amp;&quot; AND urn:schemas:httpmail:textdescription LIKE '&quot;&amp;Replace([Message], &quot;*&quot;, &quot;%&quot;)&amp;&quot;'&quot;" stage="Filter Expression" /></stage><stage stageid="1dd8b4f8-b61d-4f9e-a9a7-5272ed3b520f" name="Message?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="135" y="90" /><decision expression="[Message]&lt;&gt;&quot;&quot;" /><ontrue>9fdc22d7-6957-4cc0-b713-1dc3ef7b9f99</ontrue><onfalse>e861f624-2cad-44ad-b3b1-90a963e4241d</onfalse></stage><stage stageid="6c16cc4a-2bef-43da-8684-65b79862a98e" name="Filter String provided?" type="Decision"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><loginhibit /><display x="45" y="-90" /><decision expression="[Filter Expression]&lt;&gt;&quot;&quot;" /><ontrue>b710d7bb-b2c5-49d0-aaa0-12ca6d273496</ontrue><onfalse>df812a2b-63a2-4b7d-84bd-5949edcaca3c</onfalse></stage><stage stageid="9943ef87-9151-490c-8d70-0e0753dd955e" name="Shared E-mail" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-390" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="1e6cccd0-1fe9-419e-b917-0fe7a642b81c" name="HTML?" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-330" y="45" w="150" h="30" /><datatype>flag</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="c18a9860-0bf9-4fde-ad5d-13b98a1f29cd" name="BCC" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><display x="-210" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="bed9726b-6883-492d-92bb-6e1dc239154a" name="CC" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><display x="-255" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="a8a4d398-825e-4761-a667-d3fdb340dff0" name="To" type="Data"><subsheetid>c89b4a21-e23b-4cb0-9447-8c2dee9721e0</subsheetid><display x="-300" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="b325db33-8d3b-448e-8547-343832c79a83" name="To" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="-300" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="5b78c466-9950-4772-a756-29dd38e287cd" name="CC" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="-255" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="1978d7ea-6748-42a5-b529-02986cbb714d" name="BCC" type="Data"><subsheetid>0a91c2dc-3324-463f-acfd-a61b919fedd3</subsheetid><display x="-210" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7972fbce-ec97-43e7-ae89-76fd4bc62d10" name="Reply to Email" type="SubSheetInfo"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><narrative>Uses code to automate Outlook for the purpose of replying to mail. Only does one recipient.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="7b2f79ec-a805-4276-be19-f8a5e0f4709a" name="Start" type="Start"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><display x="105" y="-105" /><inputs><input type="text" name="Profile" narrative="Optional - Defines profile to send mail through. If not set, uses system default (IE Outlook)" stage="Profile" /><input type="text" name="SendFrom" narrative="Optional - Specifies which address to send as" stage="SendFrom" /><input type="text" name="New Subject( if need)" narrative="Optional - Text for new Subject line incase you dont send with forward subject" stage="Subject" /><input type="text" name="MailBody" narrative="Text for mail body" stage="MailBody" /><input type="text" name="Attachment" narrative="Optional - Comma separated list of file paths for attachments" stage="Attachment" /><input type="flag" name="High" narrative="High Importance?" stage="High" /><input type="flag" name="HTML" narrative="Optional - Send message as HTML. Defaults to False" stage="HTML" /><input type="text" name="Mail ID" stage="EntryID" /></inputs><onsuccess>c90a8555-b4ae-4f3b-b9a4-fbf40cb8a549</onsuccess></stage><stage stageid="f7099657-3fdb-46df-bf9d-89bad68dd9b3" name="Profile" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><display x="-210" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="7b0f832f-69ed-4942-a963-c63be47433a4" name="SendFrom" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><display x="-165" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="ad387a1d-fa40-4369-8d33-1ec162006997" name="MailBody" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><narrative>&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;u&gt;aaaaaaaaaaaaaa&lt;/u&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;</narrative><display x="-120" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Multi
+Line
+Test
+</initialvalue><private /><alwaysinit /></stage><stage stageid="11d2997a-e5ae-47bc-84d9-af8bbae482c7" name="Attachment" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit onsuccess="true" /><narrative>C:\bp\Attachments\PAN.pdf</narrative><display x="-75" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="fd48b78d-86d5-49b5-9958-d947e333e019" name="End1" type="End"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit /><display x="105" y="-15" /></stage><stage stageid="0630ad19-347e-4d5d-b235-46f66b741f06" name="High" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><display x="-30" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="fbbea26a-7b9a-4b6f-8a21-19081a1a2085" name="HTML" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><display x="15" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="0441b8fb-d0de-4634-9cda-ed80cb440c50" name="EntryID" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit /><display x="-75" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="52f0bcb7-3549-44ea-aae0-7d968ca2f921" name="Subject" type="Data"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><display x="-225" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="c90a8555-b4ae-4f3b-b9a4-fbf40cb8a549" name="Reply" type="Code"><subsheetid>21672800-6520-4ffe-ae37-56213eefd386</subsheetid><loginhibit /><display x="105" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="SendFrom" expr="[SendFrom]" /><input type="text" name="MailBody" expr="[MailBody]" /><input type="text" name="Attachment" expr="[Attachment]" /><input type="flag" name="High" expr="[High]" /><input type="flag" name="HTML" expr="[HTML]" /><input type="text" name="EntryID" expr="[EntryID]" /><input type="text" name="Subject" expr="[Subject]" /></inputs><onsuccess>fd48b78d-86d5-49b5-9958-d947e333e019</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(EntryID)
+Dim reply = item.Reply
+
+If High
+	reply.Importance=2
+end If
+
+if Subject is Nothing then
+	reply.Subject = item.Subject
+else
+	reply.Subject = Subject
+end if
+
+'reply.HTMLBody = Message & vbCrLf & item.HTMLBody
+
+Dim ForwardBody as String
+
+if HTML = True then
+	reply.BodyFormat = 2
+	ForwardBody = "*****Original Message*****" & "<br>" & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]<br>" & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") &Format(item.ReceivedTime, "h:mm:ss tt") & "<br>" & "To: " & item.To & "<br>Subject: " & item.Subject
+	reply.HTMLBody = MailBody & "<br><br><p>" & ForwardBody & "</p><br>" & item.HTMLBody
+	reply.Display
+else
+	ForwardBody = "*****Original Message*****" & vbNewLine & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]" & vbNewLine & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") & Format(item.ReceivedTime, "h:mm:ss tt") & vbNewLine & "To: " & item.To & vbNewLine & "Subject: " & item.Subject 
+	reply.Body = MailBody & vbCrlf & vbCrlf & vbCrlf & ForwardBody & vbCrlf & vbCrlf & item.Body
+end if
+
+For Each att As String In Attachment.Split(";"c)
+	If att = "" Then Continue For
+	reply.Attachments.Add(att)
+Next
+
+if SendFrom <> Nothing
+	reply.SentOnBehalfOfName = SendFrom
+end if
+
+reply.Send
+]]></code></stage><stage stageid="c51f7f66-b12d-4179-aa36-72768e395f5e" name="Reply All to Email" type="SubSheetInfo"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><narrative>Uses code to automate Outlook for the purpose of replying to mail. Sends to all recipients.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="5d65499e-f4e8-410b-a427-0202913fc185" name="Start" type="Start"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><display x="105" y="-105" /><inputs><input type="text" name="Profile" narrative="Optional - Defines profile to send mail through. If not set, uses system default (IE Outlook)" stage="Profile" /><input type="text" name="SendFrom" narrative="Optional - Specifies which address to send as" stage="SendFrom" /><input type="text" name="New Subject( if need)" narrative="Optional - Text for new Subject line incase you dont send with forward subject" stage="Subject" /><input type="text" name="MailBody" narrative="Text for mail body" stage="MailBody" /><input type="text" name="Attachment" narrative="Optional - Comma separated list of file paths for attachments" stage="Attachment" /><input type="flag" name="High" narrative="High Importance?" stage="High" /><input type="flag" name="HTML" narrative="Optional - Send message as HTML. Defaults to False" stage="HTML" /><input type="text" name="Mail ID" stage="EntryID" /></inputs><onsuccess>7dbd1adc-5493-4c76-8228-19106ea12b62</onsuccess></stage><stage stageid="b60c6507-8fd7-4875-8cc4-b89d41cfce78" name="Profile" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><display x="-210" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="5930f2c2-4d6d-4904-803e-253e3f99aa90" name="SendFrom" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><display x="-165" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="4a8fc252-937e-4b4b-98af-6537cc638869" name="MailBody" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><narrative>&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;u&gt;aaaaaaaaaaaaaa&lt;/u&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;</narrative><display x="-120" y="15" /><datatype>text</datatype><initialvalue xml:space="preserve">Multi
+Line
+Test
+</initialvalue><private /><alwaysinit /></stage><stage stageid="836c7b63-4dcd-4454-b386-494a39a85d0a" name="Attachment" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit onsuccess="true" /><narrative>C:\bp\Attachments\PAN.pdf</narrative><display x="-75" y="15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7a268971-c861-42af-8adf-a609cb07d4f5" name="End1" type="End"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit /><display x="105" y="-15" /></stage><stage stageid="cefcd6a5-f790-4569-898b-81b5dc0ad231" name="High" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><display x="-30" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="4add8714-d548-445b-af02-160277950e81" name="HTML" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><display x="15" y="15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="b426f0e2-f1b3-4a59-ad50-892a71ee93c1" name="EntryID" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit /><display x="-75" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="61e01890-be62-4bdb-867a-cbbf3d600645" name="Subject" type="Data"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><display x="-225" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7dbd1adc-5493-4c76-8228-19106ea12b62" name="Reply All" type="Code"><subsheetid>2bb24235-4275-47af-99a6-1d5eb771431d</subsheetid><loginhibit /><display x="105" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="SendFrom" expr="[SendFrom]" /><input type="text" name="MailBody" expr="[MailBody]" /><input type="text" name="Attachment" expr="[Attachment]" /><input type="flag" name="High" expr="[High]" /><input type="flag" name="HTML" expr="[HTML]" /><input type="text" name="EntryID" expr="[EntryID]" /><input type="text" name="Subject" expr="[Subject]" /></inputs><onsuccess>7a268971-c861-42af-8adf-a609cb07d4f5</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(EntryID)
+Dim reply = item.ReplyAll
+
+If High
+	reply.Importance=2
+end If
+
+if Subject is Nothing then
+	reply.Subject = item.Subject
+else
+	reply.Subject = Subject
+end if
+
+'reply.HTMLBody = Message & vbCrLf & item.HTMLBody
+
+Dim ForwardBody as String
+
+if HTML = True then
+	reply.BodyFormat = 2
+	ForwardBody = "*****Original Message*****" & "<br>" & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]<br>" & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") &Format(item.ReceivedTime, "h:mm:ss tt") & "<br>" & "To: " & item.To & "<br>Subject: " & item.Subject
+	reply.HTMLBody = MailBody & "<br><br><p>" & ForwardBody & "</p><br>" & item.HTMLBody
+	reply.Display
+else
+	ForwardBody = "*****Original Message*****" & vbNewLine & "From: " & item.SentOnBehalfOfName & " [mailto:" & item.SentOnBehalfOfName & "]" & vbNewLine & "Sent: " & Format(item.ReceivedTime, "dddd, MMMM dd, yyyy ") & Format(item.ReceivedTime, "h:mm:ss tt") & vbNewLine & "To: " & item.To & vbNewLine & "Subject: " & item.Subject 
+	reply.Body = MailBody & vbCrlf & vbCrlf & vbCrlf & ForwardBody & vbCrlf & vbCrlf & item.Body
+end if
+
+For Each att As String In Attachment.Split(";"c)
+	If att = "" Then Continue For
+	reply.Attachments.Add(att)
+Next
+
+if SendFrom <> Nothing
+	reply.SentOnBehalfOfName = SendFrom
+end if
+
+reply.Send
+]]></code></stage><stage stageid="cc4d6467-e845-4873-be44-7d12e1c4e347" name="Item Count" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-30" y="420" /><datatype>number</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="a26ee627-5838-4c25-b3db-44dc3ac5a266" name="RootFolderID" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><display x="-150" y="-30" /><datatype>number</datatype><initialvalue>6</initialvalue><private /><alwaysinit /></stage><stage stageid="2755d22f-77e3-4fae-af00-ee16e9328f0e" name="New Entry ID" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><display x="-180" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="e06d084d-be5d-4418-b055-c32bf76dc86c" name="sharedAddress" type="Data"><subsheetid>a80b68cc-60e3-49e9-a271-cbd1b54897df</subsheetid><display x="-60" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="8e82f952-aef0-40f1-895c-1552a28224ff" name="Save Attachment" type="SubSheetInfo"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><narrative>Downloads a specfic attachment to a folder. E.g. use cases are "*.txt" or "*.docx" etc.
+
+The Entry ID is the unique idenfier used to determine which email is to be actioned.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="98cad076-2373-484d-8d11-ce9fd1b79a0e" name="End" type="End"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><loginhibit /><display x="15" y="90" /></stage><stage stageid="ea1b2163-3d9b-4a49-b0c8-bc8b202a7daa" name="Start" type="Start"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><loginhibit /><display x="15" y="-135" /><inputs><input type="text" name="Entry ID" narrative="Mandatory. An ID obtained from one of the Get Item actions in this object. NB not the same as a Mapiex ID." stage="Entry ID" /><input type="text" name="Folder Path" narrative="Mandatory. The destination folder path for the attachments to be stored. Example &quot;C:\Temp&quot;." stage="Folder Path" /><input type="text" name="File Name" narrative="Optional, Default value is *.* but common cases inlcude &quot;.docx&quot; , &quot;.pdf&quot; , &quot;.xlsx&quot; etc." stage="File Name" /><input type="text" name="Profile" narrative="Optional, Outlook profile" stage="Profile" /></inputs><onsuccess>b3157bc5-875d-472a-a939-8a7821105ef7</onsuccess></stage><stage stageid="425981b2-0053-476e-ae5b-b33d23eed28e" name="Folder Path" type="Data"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><display x="-195" y="15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="b6d59c7c-dbe4-4c9c-8e81-606519b73f14" name="Entry ID" type="Data"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><narrative>An ID obtained from one of the Get Item actions in this object.</narrative><display x="-195" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d95e9280-ae9a-4d06-975f-3f0f43a3952e" name="File Name" type="Data"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><display x="-195" y="45" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="b3e373d5-6106-45de-8fff-37447ed150de" name="Save Attachments" type="SubSheet"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><loginhibit /><display x="15" y="-15" /><inputs><input type="text" name="Entry ID" narrative="Mandatory. An ID obtained from one of the Get Item actions in this object. NB not the same as a Mapiex ID." expr="[Entry ID]" /><input type="text" name="Folder Path" narrative="Mandatory. The destination folder path for the attachments to be stored. Example &quot;C:\Temp&quot;." expr="[Folder Path]" /><input type="text" name="Profile" narrative="Optional - Profile in Outlook to use. Defaults to default profile." expr="[Profile]" /></inputs><onsuccess>98cad076-2373-484d-8d11-ce9fd1b79a0e</onsuccess><processid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</processid></stage><stage stageid="5af79e0a-8efb-445f-9765-2681db103f2a" name="Input" type="Block"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><loginhibit /><display x="-405" y="-45" w="285" h="120" /><font family="Segoe UI" size="10" style="Regular" color="7FB2E5" /></stage><stage stageid="b3157bc5-875d-472a-a939-8a7821105ef7" name="Clean Up" type="Calculation"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><loginhibit /><display x="15" y="-75" /><onsuccess>b3e373d5-6106-45de-8fff-37447ed150de</onsuccess><calculation expression="Replace([File Name],&quot;&quot;&quot;&quot;,&quot;&quot;)" stage="File Name" /></stage><stage stageid="83c689a9-b365-495d-91fe-af0a910f56f4" name="Save Attachments" type="SubSheetInfo"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><narrative>Downloads all attachments to a folder. 
+
+The Entry ID is the unique idenfier used to determine which email is to be actioned.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="e4d606f7-fa04-4b6b-a2b7-9c2f8f5a1ed3" name="End" type="End"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><loginhibit /><display x="15" y="90" /></stage><stage stageid="8662178c-8056-4472-a8e1-a6bc7108597a" name="Start" type="Start"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><loginhibit /><display x="15" y="-135" /><inputs><input type="text" name="Entry ID" narrative="Mandatory. An ID obtained from one of the Get Item actions in this object. NB not the same as a Mapiex ID." stage="Entry ID" /><input type="text" name="Folder Path" narrative="Mandatory. The destination folder path for the attachments to be stored. Example &quot;C:\Temp&quot;." stage="Folder Path" /><input type="text" name="Profile" narrative="Optional - Profile in Outlook to use. Defaults to default profile." stage="Profile" /></inputs><onsuccess>34a763d1-d5db-40c1-9d82-877392f1fac4</onsuccess></stage><stage stageid="34a763d1-d5db-40c1-9d82-877392f1fac4" name="Save Attachments" type="Code"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><loginhibit /><display x="15" y="-15" /><inputs><input type="text" name="Folder Path" expr="[Folder Path]" /><input type="text" name="Entry ID" expr="[Entry ID]" /><input type="text" name="File Pattern" expr="[File Pattern]" /><input type="text" name="Profile" expr="[Profile]" /></inputs><onsuccess>e4d606f7-fa04-4b6b-a2b7-9c2f8f5a1ed3</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(Entry_ID)
+If item Is Nothing Then Return
+
+If Not Folder_Path.EndsWith("\") Then Folder_Path &="\"
+
+For Each attachment As Object In item.Attachments
+	If attachment.Type = 1 AndAlso attachment.FileName Like File_Pattern Then
+		attachment.SaveAsFile(Folder_Path & attachment.FileName)
+	End If
+Next
+]]></code></stage><stage stageid="ee68a19b-7a3e-45f2-b185-3dc474ff20f3" name="Folder Path" type="Data"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><display x="-195" y="15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="216444e4-b60b-46a3-a588-88d6d53c1d17" name="Entry ID" type="Data"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><narrative>An ID obtained from one of the Get Item actions in this object.</narrative><display x="-195" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="dcf5597f-d32e-477c-9bb8-cbd8500b2832" name="File Pattern" type="Data"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><display x="-195" y="45" w="150" h="30" /><datatype>text</datatype><initialvalue xml:space="preserve">*.*</initialvalue><private /><alwaysinit /></stage><stage stageid="013e08a0-873b-4c69-bb97-8ac0a975c8e6" name="Input" type="Block"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><loginhibit /><display x="-435" y="-45" w="315" h="120" /><font family="Segoe UI" size="10" style="Regular" color="7FB2E5" /></stage><stage stageid="618938f0-de29-47fc-af46-b2a0ac0746f2" name="Profile" type="Data"><subsheetid>90aaf62d-f355-478f-a0aa-cf2336a3fb76</subsheetid><display x="-330" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="4041a3a5-0ad7-49ec-8c12-8ad0836260ba" name="Profile" type="Data"><subsheetid>a5cf62b6-98e5-4bad-b713-99d3a4cda262</subsheetid><display x="-345" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="0c334166-d8f9-4b9d-8a5a-f6cb7835b980" name="Save Email As File" type="SubSheetInfo"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><narrative>Stores a specified email as a ".msg" file on any file location (file path).
+
+The Entry ID is the unique idenfier used to determine which email is to be saved.</narrative><display x="-195" y="-75" w="150" h="120" /></stage><stage stageid="ef37c459-9151-411e-9cc3-292944dd13ad" name="Start" type="Start"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><loginhibit /><display x="15" y="-105" /><inputs><input type="text" name="Entry ID" narrative="Mandatory. An ID obtained from one of the Get Item actions in this object. NB not the same as a Mapiex ID." stage="Entry ID" /><input type="text" name="File Path" narrative="Mandatory. The destination file path. Default blank." stage="File Path" /><input type="text" name="File Name" narrative="Mandatory. The File Name for the stored Email." stage="File Name" /><input type="text" name="Profile" narrative="Optional. Name of profile to use in Outlook. Will use default it blank." stage="Profile" /></inputs><onsuccess>da34efe1-39c4-48cd-8986-2a07d61fa3ff</onsuccess></stage><stage stageid="4a351746-5eec-45fb-8328-98926e7763c7" name="End" type="End"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><loginhibit /><display x="15" y="90" /></stage><stage stageid="da34efe1-39c4-48cd-8986-2a07d61fa3ff" name="Save As" type="Code"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><loginhibit /><narrative>Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent</narrative><display x="15" y="-15" /><inputs><input type="text" name="File Path" expr="[File Path]" /><input type="text" name="Entry ID" expr="[Entry ID]" /><input type="text" name="File Name" expr="[File Name]" /><input type="text" name="Profile" expr="[Profile]" /></inputs><onsuccess>4a351746-5eec-45fb-8328-98926e7763c7</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+Dim item = _nameSpace.GetItemFromID(Entry_ID)
+item.SaveAs (File_Path & File_Name & ".msg")]]></code></stage><stage stageid="5e77bbca-7c2c-4431-af84-7b0da44aa2e6" name="File Path" type="Data"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><display x="-195" y="30" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d75b553a-07ed-4364-bf48-98902c8513fd" name="Entry ID" type="Data"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><narrative>An ID obtained from one of the Get Item actions in this object.</narrative><display x="-195" y="60" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d28efe59-6bf4-48c3-987b-8a0dfceca4a9" name="File Name" type="Data"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><display x="-195" y="90" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="bbddbd24-5263-4106-af4c-f4002f1f4f1c" name="Input" type="Block"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><loginhibit /><display x="-270" y="0" w="150" h="150" /><font family="Segoe UI" size="10" style="Regular" color="7FB2E5" /></stage><stage stageid="ab6e847c-7c72-4718-b003-f95a1acdf646" name="Profile" type="Data"><subsheetid>fdc18e2f-73b4-4ef6-90d3-d3965e1e9a54</subsheetid><display x="-195" y="120" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="7de7622c-026f-4a5f-9c4f-122de4b777bc" name="Mark Read" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-120" y="-15" /><datatype>flag</datatype><initialvalue>False</initialvalue><private /><alwaysinit /></stage><stage stageid="4c0b20da-c068-49eb-bf9f-e5f239984e89" name="Mark Read" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-465" y="15" w="150" h="30" /><datatype>flag</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="2e58a3ad-5a12-49c6-a77b-78a2defbf4d9" name="Delete" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-465" y="45" w="150" h="30" /><datatype>flag</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="224cf95e-424e-4bb5-bbd8-56520e36e6ca" name="MoveTo" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-465" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="aa573fb8-bbc1-4b39-b5d2-13c41e620d2e" name="MoveTo" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-75" y="-15" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="8e8e6f8a-6a1a-4da7-a500-b043940f79df" name="Delete" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-30" y="-15" /><datatype>flag</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="74138eee-1944-49c2-9e28-2a4fedc6004a" name="MaxCount" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-420" y="30" /><datatype>number</datatype><initialvalue>0</initialvalue><private /><alwaysinit /></stage><stage stageid="9d6db1af-ee66-4347-abfd-547615f0f138" name="MaxCount" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-600" y="15" w="150" h="30" /><datatype>number</datatype><initialvalue>0</initialvalue><private /><alwaysinit /></stage><stage stageid="238b1749-7de8-43f9-b6d0-45f011269c24" name="Oldest" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-435" y="-15" /><datatype>flag</datatype><initialvalue>True</initialvalue><private /><alwaysinit /></stage><stage stageid="994cc12e-ff2b-4c70-87ea-2a5604762be4" name="Oldest" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-600" y="-15" w="150" h="30" /><datatype>flag</datatype><initialvalue>True</initialvalue><private /><alwaysinit /></stage><stage stageid="95392551-0d4f-429c-baad-11e6a4cbd027" name="Resolve_Name" type="SubSheetInfo"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="adc41589-039d-4eed-bd98-1342825a2ec1" name="Start" type="Start"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><loginhibit /><display x="15" y="-105" /><inputs><input type="text" name="Profile" stage="Profile" /><input type="text" name="displayName" stage="displayName" /></inputs><onsuccess>b0010aad-870f-4864-8e13-aca37f1bc7b4</onsuccess></stage><stage stageid="15d58ee8-cb87-4a04-b1d8-97a0410ffdac" name="End" type="End"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><loginhibit /><display x="15" y="90" /><outputs><output type="text" name="smtpName" stage="smtpName" /></outputs></stage><stage stageid="b0010aad-870f-4864-8e13-aca37f1bc7b4" name="Resolve" type="Code"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><loginhibit /><display x="15" y="-30" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="displayName" expr="[displayName]" /></inputs><outputs><output type="text" name="smtpName" stage="smtpName" /></outputs><onsuccess>15d58ee8-cb87-4a04-b1d8-97a0410ffdac</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+Dim olSharedRecip as object
+Dim oEU as Object 'Outlook.ExchangeUser
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+olSharedRecip = _nameSpace.CreateRecipient(displayName)
+olSharedRecip.Resolve
+
+if olSharedRecip.Resolved then
+	select case olSharedRecip.AddressEntry.AddressEntryUserType
+		Case 0, 5 'olExchangeUserAddressEntry & olExchangeUserAddressEntry
+			oEU = olSharedRecip.AddressEntry.GetExchangeUser
+			if not (oEU is nothing) then
+				smtpName = oEU.PrimarySmtpAddress
+			end if
+		Case 10, 30 'olOutlookContactAddressEntry & 'olSmtpAddressEntry
+			smtpName = olSharedRecip.AddressEntry.Address
+	end select
+end if]]></code></stage><stage stageid="9f187372-be95-4b90-8107-6714db9a7ebd" name="Profile" type="Data"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><display x="90" y="-105" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="60dee599-adcc-42fc-8fe6-49cc090b9246" name="displayName" type="Data"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><display x="150" y="-105" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="228dc8aa-ca70-414a-a4b2-8900f879d7b0" name="smtpName" type="Data"><subsheetid>86407b98-7927-443d-be21-ab1864be4000</subsheetid><display x="90" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="ac45de07-81d4-467b-99ce-d2b7446c5fe3" name="Force Sync" type="SubSheetInfo"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><narrative>Forces a sync (send/receive) action within Outlook. Primarily used for outbound, but can be done for either direction if necessary.</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="ef50a326-48ab-4892-b0df-8dd4f757f60c" name="Start" type="Start"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><loginhibit /><display x="15" y="-90" /><inputs><input type="number" name="Outlook Folder ID" narrative="Mandatory. Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent" stage="Outlook Folder ID" /><input type="text" name="Profile" narrative="Optional, Profile in Outlook" stage="Profile" /><input type="text" name="Shared Address" narrative="Optional, Address of shared mailbox" stage="SharedAddress" /></inputs><onsuccess>bc23bc20-b28d-495d-a33d-62a9e2ad5495</onsuccess></stage><stage stageid="29e45eef-7bf8-4240-ac2c-f4474a64e3e2" name="End" type="End"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><loginhibit /><display x="15" y="105" /></stage><stage stageid="bc23bc20-b28d-495d-a33d-62a9e2ad5495" name="Sync Items" type="Code"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><loginhibit /><display x="15" y="0" /><inputs><input type="number" name="Outlook Folder ID" expr="[Outlook Folder ID]" /><input type="text" name="Profile" expr="[Profile]" /><input type="text" name="sharedEmail" expr="[SharedAddress]" /></inputs><onsuccess>29e45eef-7bf8-4240-ac2c-f4474a64e3e2</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+Dim folder = _nameSpace.GetDefaultFolder(Outlook_Folder_ID)
+Dim olSharedRecip as object
+
+Dim sycs As SyncObjects
+Dim syc As SyncObject
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+if sharedEmail <> Nothing then
+	olSharedRecip = _nameSpace.CreateRecipient(sharedEmail)
+	folder = _nameSpace.GetSharedDefaultFolder(olSharedRecip, Outlook_Folder_ID)
+end if
+
+sycs = _nameSpace.SyncObjects
+
+dim i = 0
+
+For i = 1 To sycs.Count
+	syc = sycs.Item(i)
+	syc.Start
+Next]]></code></stage><stage stageid="146155c3-161d-4907-9c66-36f2a343d0a9" name="Outlook Folder ID" type="Data"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><narrative>Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent</narrative><display x="-195" y="15" w="150" h="30" /><datatype>number</datatype><initialvalue>6</initialvalue><private /><alwaysinit /></stage><stage stageid="97a2bd9d-f421-4a48-b709-fc695a5d4b77" name="Input" type="Block"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><loginhibit /><display x="-420" y="-45" w="315" h="120" /><font family="Segoe UI" size="10" style="Regular" color="7FB2E5" /></stage><stage stageid="71867029-e5c3-4c9a-8aca-8409fa278efc" name="Profile" type="Data"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><display x="-330" y="-15" w="150" h="30" /><datatype>text</datatype><initialvalue xml:space="preserve">Outlook</initialvalue><private /><alwaysinit /></stage><stage stageid="18faadd9-5c24-4789-aaf8-bed3e9f21ca0" name="SharedAddress" type="Data"><subsheetid>3447211e-ebd7-4a30-9e97-66bd7f085195</subsheetid><display x="-330" y="15" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="816f9e66-4c79-4f74-8532-33388d18c3ae" name="Move Single Mail with Folder Path" type="SubSheetInfo"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit onsuccess="true" /><narrative>Caution: If ANY shared inboxes are on the profile, use "Move Single Mail from Shared Inbox". Otherwise this will take a /very/ long time.
+
+This moves one mail from the specified folder to another specified folder by Entry ID, stored in ID.txt from Get Mail</narrative><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="2f042d63-6f13-48b7-90ea-8a57626d1bfd" name="Start" type="Start"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit onsuccess="true" /><display x="15" y="-105" /><inputs><input type="text" name="Profile" narrative="OPTIONAL - Profile to use for Outlook. Defaults to system default." stage="Profile" /><input type="text" name="ID" narrative="REQUIRED - Deletes a message by Entry ID, stored in ID.txt by Get Mail" stage="ID" /><input type="number" name="RootFolderID" narrative="Optional - Specifies Outlook folder ID of root folder for destination to move to. Defaults to 6, Inbox." stage="RootFolderID" /><input type="text" name="SubfolderName" narrative="Optional - Subfolder to move messages to post-process, in a format of Folder 1\Folder 2\Folder 3, etc" stage="MoveTo" /><input type="text" name="SharedAddress" narrative="Optional - Specify an e-mail address on this profile to move within. Only useful when multiple inboxes are on a single profile." stage="sharedAddress" /></inputs><onsuccess>87ba2181-014f-47d7-8973-1834747ddd24</onsuccess></stage><stage stageid="85f392f4-1471-4f87-baf9-a190b93d35dc" name="Profile" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit onsuccess="true" /><display x="-195" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="07cc4d80-ee37-4e4f-9b92-2e699869711f" name="ID" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit onsuccess="true" /><display x="-240" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="87ba2181-014f-47d7-8973-1834747ddd24" name="MoveOnePath" type="Code"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit /><display x="15" y="-60" /><inputs><input type="text" name="Profile" expr="[Profile]" /><input type="number" name="RootFolderID" expr="[RootFolderID]" /><input type="text" name="ID" expr="[ID]" /><input type="text" name="moveTo" expr="[MoveTo]" /><input type="text" name="sharedEmail" expr="[sharedAddress]" /></inputs><outputs><output type="text" name="New Entry ID" stage="New Entry ID" /></outputs><onsuccess>0906365a-5cf6-45a0-8ad7-bceba76ff224</onsuccess><code><![CDATA[Dim app = CreateObject("Outlook.Application")
+Dim _nameSpace = app.GetNameSpace("MAPI")
+Dim olSharedRecip as object
+
+'Dim TargetFolder as _nameSpace.Folder
+
+if Profile <> "" then
+    _nameSpace.Logon(Profile, , True, True)
+end if
+
+'Dim folder = _nameSpace.GetDefaultFolder(RootFolderID)
+Dim folder as object
+
+if sharedEmail <> Nothing then
+	olSharedRecip = _nameSpace.CreateRecipient(sharedEmail)
+	folder = _nameSpace.GetSharedDefaultFolder(olSharedRecip, RootFolderID)
+else
+	folder = _nameSpace.GetDefaultFolder(RootFolderID)
+end if
+
+Dim item = _nameSpace.GetItemFromID(ID)
+
+If moveTo <> "" Then
+	'folder = folder.Folders(moveTo)
+	'Dim FoldersArray as Object
+	'FoldersArray = Split(moveTo, "\")
+	'folder = folder.Folders.Item(FoldersArray(0))
+	'if Not folder is Nothing Then
+	'	For i = 1 to UBound(FoldersArray, 1)
+	'		Dim SubFolders as folder.Folders
+	'		SubFolders = folder.Folders
+	'		folder = SubFolders.item(FoldersArray(i))
+	'	Next
+	'end if
+	For each name as string in moveTo.Split("\")
+			folder = folder.Folders(name)
+		Next
+	
+End If
+
+New_Entry_ID = item.Move(folder).EntryID]]></code></stage><stage stageid="0906365a-5cf6-45a0-8ad7-bceba76ff224" name="End3" type="End"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><loginhibit /><display x="15" y="-15" /><outputs><output type="text" name="New ID" narrative="New ID of moved email." stage="New Entry ID" /></outputs></stage><stage stageid="0ac8428d-7663-4cb7-8811-ddc21d4d8397" name="MoveTo" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><display x="-105" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="172db17a-5d58-4c4e-93ca-ae7aabf3bbc3" name="RootFolderID" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><display x="-150" y="-30" /><datatype>number</datatype><initialvalue>6</initialvalue><private /><alwaysinit /></stage><stage stageid="d504cd79-98a7-4dfc-bbb4-a57f7c7688f1" name="New Entry ID" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><display x="-180" y="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="576edf49-2b9f-49bc-8dd1-f0ba81ae9b6e" name="sharedAddress" type="Data"><subsheetid>b72161c9-3340-4fef-9409-f1bcbb679efd</subsheetid><display x="-60" y="-30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="e3e0f9bb-e6ef-48a6-bb3f-3acb523f7f10" name="Account Display Name" type="Data"><subsheetid>95b1d477-2963-4353-a189-38504ed09fad</subsheetid><display x="-600" y="45" w="150" h="30" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage><stage stageid="d48b5c46-a68a-4d76-8e49-4df5988e4103" name="Account Display Name" type="Data"><subsheetid>5651b7be-4fc2-4624-9c6b-f089b7a01a9f</subsheetid><display x="-405" y="90" /><datatype>text</datatype><initialvalue /><private /><alwaysinit /></stage></process></object>
+        <object-group id="be68aafc-7ce6-43de-810e-7f194e000a0a" name="Utility Objects" isDefaultGroup="False" xmlns="http://www.blueprism.co.uk/product/object-group">
+            <members>
+                <object id="09a7ac3d-988a-495a-b28e-6b5415140dea" />
+            </members>
+        </object-group>
+    </bpr:contents>
+</bpr:release>
