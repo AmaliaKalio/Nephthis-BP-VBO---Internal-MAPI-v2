@@ -45,6 +45,8 @@ Grabs and stores mail into a collection.
   * Optional - Defaults to True
 * Account Display Name - Text
   * Optional. DisplayName of the email account. Default account is used if omitted.
+* Account Display Name - Flag
+  * Optional - Defaults to False. Specifies if you're looking for a report item instead of a mail item.
 
 ### Outputs:
 * Items - Collection
@@ -74,6 +76,14 @@ Uses code to automate Outlook for the purpose of sending mail.
   * Required - High Importance?
 * HTML - Flag
   * Optional - Send message as HTML. Defaults to False
+* Voting Options - Text
+  * Optional - A CSV of voting options to add to a messag
+* Sensitivity - Number
+  * Optional - A numeric value between 0 and 3 with increasing severity. Defaults to 0.
+* Importance - Number
+  * Optional - A numeric value between 0 and 3 with increasing importance. Defaults to 0.
+* HTML - Flag
+  * Reply Recipients - Optional - Sets the 'Reply To' field in outlook, so users respond to another account. Defaults to blank, where users respond to the same account the message is being sent from. Expects a semicolon-delimited list of recipients.
 
 ## Forward Mail
 Uses code to automate Outlook for the purpose of forewarding mail.
@@ -147,7 +157,21 @@ Forces a sync (send/receive) action within Outlook. Primarily used for outbound,
 * SharedAddress - Text
   * Optional - Mail address of shared inbox on same profile
 * Outlook Folder ID
-  *  Mandatory. Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent
+  * Mandatory. Google OlDefaultFolders Enumeration, 6 = Inbox, 5 = Sent
+
+## Resolve_Name
+Attempts to find the e-mail address of a supplied display name. For exmample, "Joe Smith" could resolve to "joe.smith@myorg.com". Relies on organizational and address book lookup.
+
+### Read .MSG File:
+* File Path - Text
+  * Reqiured - Full path of .MSG file
+* SaveAttachment - Flag
+  * Required - Weather or not to save attachments in the file. Defaults to False.
+* Attachment Destination - Text
+  * Semi-Required: Can be blank if previous option is False. Defines where to save attachments to.
+
+### Outputs:
+* Same as Get Mail
 
 ## Resolve_Name
 Attempts to find the e-mail address of a supplied display name. For exmample, "Joe Smith" could resolve to "joe.smith@myorg.com". Relies on organizational and address book lookup.
